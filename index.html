@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decentralized Metaverses: History, Economics & Future</title>
     <link rel="stylesheet" href="/src/style.css">
+    <!-- Chart.js from a public CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
+
 <body>
     <div class="reveal">
         <div class="slides">
             <!-- Title Slide -->
             <section class="center" data-background-color="#000000">
-                <h1 class="gradient-text mb-8">Decentralized Metaverses</h1>
+                <h1 class="gradient-text mb-4">Decentralized Metaverses</h1>
                 <h3 class="text-gray-300">From Virtual Worlds to Web3 Economies</h3>
-                <p class="text-gray-400 mt-8">
-                    <small>A journey through history, economics, and the Ethereum-powered future</small>
+                <p class="text-gray-400 mt-4">
+                    A journey through history, economics, and the Ethereum-powered present & future
                 </p>
             </section>
 
             <!-- Part 1: History & Evolution (10 minutes) -->
-            
+
             <!-- Slide 1.1: Genesis -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">The Genesis: Early Virtual Worlds</h2>
+                <h2 class="gradient-text mb-3">The Genesis: Early Virtual Worlds</h2>
                 <h3 class="text-metaverse-purple">1970s-1980s</h3>
-                
-                <div class="timeline mt-8">
+
+                <div class="timeline mt-4">
                     <div class="timeline-item fragment" data-fragment-index="1">
-                        <h4 class="text-xl font-bold">1970s: MUDs</h4>
-                        <p class="text-gray-400">Text-based multi-user dungeons on ARPANET</p>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold">1970s: MUDs</h4>
+                                <p class="text-gray-400">Text-based multi-user dungeons on ARPANET</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="/images/forgotten-kingdoms.png" alt="Forgotten Kingdoms MUD"
+                                    class="rounded border border-gray-700" style="max-height: 110px;">
+                                <img src="/images/text-mud.webp" alt="Text-based MUD gameplay"
+                                    class="rounded border border-gray-700" style="max-height: 110px;">
+                            </div>
+                        </div>
                     </div>
-                    
+
                     <div class="timeline-item fragment" data-fragment-index="2">
-                        <h4 class="text-xl font-bold text-metaverse-pink">1986: Lucasfilm's Habitat</h4>
-                        <p class="text-gray-400">First graphical virtual world with:</p>
-                        <ul class="text-sm text-gray-500 mt-2">
-                            <li>• Thousands of players as cartoon avatars</li>
-                            <li>• Virtual currency and items</li>
-                            <li>• User-driven content and emergent economies</li>
-                            <li>• Persistent world changes</li>
-                        </ul>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-1">
+                                <h4 class="text-lg font-bold text-metaverse-pink">1986: Lucasfilm's Habitat</h4>
+                                <p class="text-gray-400">First graphical virtual world with:</p>
+                                <ul class="text-sm text-gray-500 mt-2">
+                                    <li>• Thousands of players as cartoon avatars</li>
+                                    <li>• Virtual currency and items</li>
+                                    <li>• User-driven content and emergent economies</li>
+                                    <li>• Persistent world changes</li>
+                                </ul>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="/images/habitat1.jpg" alt="Habitat title screen"
+                                    class="rounded border border-gray-700" style="max-height: 110px;">
+                                <img src="/images/lessonshabitat.gif" alt="Habitat gameplay"
+                                    class="rounded border border-gray-700" style="max-height: 110px;">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="fragment mt-6" data-fragment-index="3">
+
+                <div class="fragment mt-3" data-fragment-index="3">
                     <blockquote class="border-l-4 border-metaverse-purple pl-4 text-gray-300 italic">
                         "Don't bother writing AIs, just let real people interact"
                         <footer class="text-sm text-gray-500 mt-2">— Chip Morningstar, Habitat creator</footer>
@@ -53,35 +77,35 @@
 
             <!-- Slide 1.2: 1990s Evolution -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Virtual Worlds in the 1990s</h2>
+                <h2 class="gradient-text mb-3">Virtual Worlds in the 1990s</h2>
                 <h3 class="text-metaverse-blue">From Text to 3D</h3>
-                
-                <div class="grid grid-cols-2 gap-6 mt-8">
+
+                <div class="grid grid-cols-2 gap-6 mt-4">
                     <div class="fragment">
-                        <h4 class="text-xl font-bold mb-3">Active Worlds (1995)</h4>
-                        <ul class="text-gray-400 text-sm space-y-2">
-                            <li>• User-owned virtual land</li>
-                            <li>• Multi-world architecture</li>
-                            <li>• First virtual weddings (1996)</li>
-                            <li>• Still running today!</li>
+                        <h4 class="text-lg font-bold mb-3">Active Worlds (1995)</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>User-owned virtual land</li>
+                            <li>Multi-world architecture</li>
+                            <li>First virtual weddings (1996)</li>
+                            <li>Still running today!</li>
                         </ul>
                     </div>
-                    
+
                     <div class="fragment">
-                        <h4 class="text-xl font-bold mb-3">The Palace (1995)</h4>
-                        <ul class="text-gray-400 text-sm space-y-2">
-                            <li>• 2D graphical chat rooms</li>
-                            <li>• User-customizable avatars</li>
-                            <li>• Peak cultural moment</li>
-                            <li>• Influenced later social apps</li>
+                        <h4 class="text-lg font-bold mb-3">The Palace (1995)</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>2D graphical chat rooms</li>
+                            <li>User-customizable avatars</li>
+                            <li>Peak cultural moment</li>
+                            <li>Influenced later social apps</li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="fragment mt-8 text-center">
+
+                <div class="fragment mt-6 text-center">
                     <p class="text-lg text-metaverse-green">Neal Stephenson coins "Metaverse" in Snow Crash (1992)</p>
                 </div>
-                
+
                 <aside class="notes">
                     - Active Worlds proved longevity of user-generated worlds
                     - Multiple platforms experimented with different approaches
@@ -91,34 +115,43 @@
 
             <!-- Slide 1.3: Second Life Era -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">The Modern Metaverse: Second Life</h2>
+                <h2 class="gradient-text mb-3">The Modern Metaverse: Second Life</h2>
                 <h3 class="text-metaverse-purple">2003-Present</h3>
-                
-                <div class="grid grid-cols-2 gap-8 mt-6">
+
+                <div class="grid grid-cols-2 gap-6 mt-3">
                     <div>
-                        <h4 class="text-xl font-bold mb-4">Revolutionary Features</h4>
-                        <ul class="text-gray-400 space-y-2 text-sm">
-                            <li class="fragment">• User-generated everything (2B+ items created)</li>
-                            <li class="fragment">• L$ ↔ USD convertibility</li>
-                            <li class="fragment">• In-world scripting (LSL)</li>
-                            <li class="fragment">• Virtual land ownership as a service</li>
+                        <h4 class="text-lg font-bold mb-4">Revolutionary Features</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="fragment" data-fragment-index="1">User-generated everything (2B+ items created)
+                            </li>
+                            <li class="fragment" data-fragment-index="2">L$ ↔ USD convertibility</li>
+                            <li class="fragment" data-fragment-index="3">In-world scripting (LSL)</li>
+                            <li class="fragment" data-fragment-index="4">Virtual land ownership as a service</li>
                         </ul>
                     </div>
-                    
+
                     <div>
-                        <h4 class="text-xl font-bold mb-4">Economic Impact</h4>
-                        <ul class="text-gray-400 space-y-2 text-sm">
-                            <li class="fragment highlight-current-purple" data-fragment-index="5">Peak: 88,000 concurrent users</li>
-                            <li class="fragment highlight-current-purple" data-fragment-index="6">2009: $567M user-to-user transactions</li>
-                            <li class="fragment highlight-current-purple" data-fragment-index="7">2023: $650M annual GDP</li>
-                            <li class="fragment highlight-current-purple" data-fragment-index="8">14 users cashed out $1M+ in 2022</li>
+                        <h4 class="text-lg font-bold mb-4">Economic Impact</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li class="fragment highlight-current-purple" data-fragment-index="5">Peak: 88,000
+                                concurrent users</li>
+                            <li class="fragment highlight-current-purple" data-fragment-index="6">2009: $567M
+                                user-to-user transactions</li>
+                            <li class="fragment highlight-current-purple" data-fragment-index="7">2023: $650M annual GDP
+                            </li>
+                            <li class="fragment highlight-current-purple" data-fragment-index="8">14 users cashed out
+                                $1M+ in 2022
+                                <img src="/images/anshe-chung-businessweek.gif" alt="First Second Life millionaire"
+                                    class="w-60 rounded border border-gray-700 ml-2">
+                            </li>
+
                         </ul>
                     </div>
                 </div>
-                
-                <div class="fragment mt-8 p-4 bg-gray-900 rounded-lg">
+
+                <div class="fragment w-1/2 -mt-72 p-4 bg-gray-900 rounded-lg">
                     <p class="text-center text-metaverse-pink">
-                        First realization of the metaverse vision:<br/>
+                        First realization of the metaverse vision:<br />
                         <span class="text-gray-400">Open-ended digital world with its own economy and culture</span>
                     </p>
                 </div>
@@ -126,45 +159,212 @@
 
             <!-- Slide 1.3b: Second Life Video -->
             <section data-background-color="#0a0a0a">
-                <h3 class="gradient-text mb-6">Second Life: A Virtual Economy in Action</h3>
-                
+                <h3 class="gradient-text mb-4">Second Life: A Virtual Economy in Action</h3>
+
                 <div class="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/embed/GgJXIaND0Q8?autoplay=0&rel=0" 
-                        title="Second Life Virtual World"
-                        allowfullscreen>
+                    <iframe src="https://www.youtube.com/embed/r74hkI-JcHY?autoplay=0&rel=0"
+                        title="Second Life Virtual World" allowfullscreen>
                     </iframe>
                 </div>
-                
-                <p class="text-center text-gray-400 mt-4 text-sm">
-                    Click to play: Documentary on Second Life's virtual economy
-                </p>
+            </section>
+
+            <!-- Slide 1.3c: Second Life economics 2007-2023 -->
+            <section data-background-color="#0a0a0a">
+                <h2 class="gradient-text mb-3">Second Life: A Virtual Economy in Action</h2>
+                <h3 class="text-metaverse-blue">2006-2023</h3>
+
+                <div class="mt-4">
+                    <!-- Canvas that Chart.js will draw into -->
+                    <canvas id="slEconomyChart" width="800" height="200"></canvas>
+
+                    <!-- Inline script: builds the line chart when the slide is shown -->
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            /** Second Life economy (USD millions, nominal) **/
+                            const slYears = [2006, 2008, 2009, 2015, 2018, 2023];
+                            const slGDPmUSD = [64, 361, 567, 500, 500, 650];
+                            let chartDrawn = false;
+
+                            // Wait for Reveal to be available
+                            function setupChart() {
+                                if (typeof window.deck !== 'undefined' && window.deck) {
+                                    // Hook into Reveal.js events
+                                    window.deck.on('slidechanged', initWhenVisible);
+                                    window.deck.on('ready', initWhenVisible);
+                                } else {
+                                    // If Reveal isn't ready yet, try again
+                                    setTimeout(setupChart, 100);
+                                }
+                            }
+
+                            function initWhenVisible(evt) {
+                                const currentSlide = evt.currentSlide || document.querySelector('.present');
+                                if (!chartDrawn && currentSlide && currentSlide.querySelector('#slEconomyChart')) {
+                                    chartDrawn = true;
+
+                                    const ctx = document.getElementById('slEconomyChart').getContext('2d');
+
+                                    // Build the chart with dark theme colors
+                                    new Chart(ctx, {
+                                        type: 'line',
+                                        data: {
+                                            labels: slYears,
+                                            datasets: [{
+                                                label: 'User-to-User Transaction Volume (USD Millions)',
+                                                data: slGDPmUSD,
+                                                tension: 0.25,
+                                                fill: false,
+                                                borderColor: '#7c3aed',
+                                                backgroundColor: '#7c3aed',
+                                                borderWidth: 3,
+                                                pointRadius: 5,
+                                                pointHoverRadius: 7,
+                                                pointBackgroundColor: '#7c3aed',
+                                                pointBorderColor: '#fff',
+                                                pointBorderWidth: 2
+                                            }]
+                                        },
+                                        options: {
+                                            responsive: true,
+                                            maintainAspectRatio: false,
+                                            plugins: {
+                                                legend: {
+                                                    display: true,
+                                                    labels: {
+                                                        color: '#e5e7eb',
+                                                        font: {
+                                                            size: 12
+                                                        }
+                                                    }
+                                                },
+                                                tooltip: {
+                                                    callbacks: {
+                                                        label: ctx => ` $${ctx.parsed.y}M`
+                                                    }
+                                                }
+                                            },
+                                            scales: {
+                                                y: {
+                                                    beginAtZero: false,
+                                                    grid: {
+                                                        color: 'rgba(255, 255, 255, 0.1)'
+                                                    },
+                                                    ticks: {
+                                                        color: '#e5e7eb',
+                                                        callback: v => '$' + v + 'M'
+                                                    },
+                                                    title: {
+                                                        display: true,
+                                                        text: 'USD Millions',
+                                                        color: '#e5e7eb'
+                                                    }
+                                                },
+                                                x: {
+                                                    grid: {
+                                                        color: 'rgba(255, 255, 255, 0.1)'
+                                                    },
+                                                    ticks: {
+                                                        color: '#e5e7eb'
+                                                    },
+                                                    title: {
+                                                        display: true,
+                                                        text: 'Year',
+                                                        color: '#e5e7eb'
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    });
+                                }
+                            }
+
+                            setupChart();
+                        });
+                    </script>
+                </div>
+
+                <div class="fragment mt-4">
+                    <details class="text-xs text-gray-400">
+                        <summary class="cursor-pointer hover:text-gray-300">Data Sources</summary>
+                        <table class="mt-2 w-full text-xs">
+                            <thead>
+                                <tr class="border-b border-gray-700">
+                                    <th class="text-left p-1">Year</th>
+                                    <th class="text-left p-1">USD m</th>
+                                    <th class="text-left p-1">What's being measured</th>
+                                    <th class="text-left p-1">Key source</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-500">
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-1">2006</td>
+                                    <td class="p-1 font-bold">64</td>
+                                    <td class="p-1">Estimated annual GDP (user-to-user transactions)</td>
+                                    <td class="p-1">Popular Science profile & Linden Lab blog (<a href="https://en.wikipedia.org/wiki/Economy_of_Second_Life" class="text-metaverse-purple hover:underline">Wikipedia</a>)</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-1">2008</td>
+                                    <td class="p-1 font-bold">361</td>
+                                    <td class="p-1">User-to-user transactions; 54% ↑ over 2007</td>
+                                    <td class="p-1">ABC News / PC World report (<a href="https://abcnews.go.com/Technology/PCWorld/story?id=6688909" class="text-metaverse-purple hover:underline">ABC News</a>)</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-1">2009</td>
+                                    <td class="p-1 font-bold">567</td>
+                                    <td class="p-1">Total virtual-goods market volume; 65% ↑ YoY</td>
+                                    <td class="p-1">Linden Lab press + VentureBeat (<a href="https://venturebeat.com/business/second-lifes-economy-grows-65-to-567m/" class="text-metaverse-purple hover:underline">VentureBeat</a>, <a href="https://en.wikipedia.org/wiki/Economy_of_Second_Life" class="text-metaverse-purple hover:underline">Wikipedia</a>)</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-1">2015</td>
+                                    <td class="p-1 font-bold">500</td>
+                                    <td class="p-1">Rounded annual "GDP" cited in industry overviews</td>
+                                    <td class="p-1">Investopedia explainer (<a href="https://www.investopedia.com/terms/s/second-life-economy.asp" class="text-metaverse-purple hover:underline">Investopedia</a>)</td>
+                                </tr>
+                                <tr class="border-b border-gray-800">
+                                    <td class="p-1">2018</td>
+                                    <td class="p-1 font-bold">500</td>
+                                    <td class="p-1">PC Gamer article on economy size during loot-box ban news</td>
+                                    <td class="p-1">PC Gamer (<a href="https://www.pcgamer.com/second-life-is-banning-gacha-style-transactions-next-month/" class="text-metaverse-purple hover:underline">PC Gamer</a>)</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-1">2023</td>
+                                    <td class="p-1 font-bold">650</td>
+                                    <td class="p-1">20-year-anniversary press release ("vibrant $650M economy")</td>
+                                    <td class="p-1">Linden Lab press (<a href="https://lindenlab.com/press-release/original-metaverse-second-life-celebrates-20th-birthday" class="text-metaverse-purple hover:underline">lindenlab.com</a>)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </details>
+                </div>
             </section>
 
             <!-- Slide 1.4: Social VR & Gaming -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Social VR & Gaming Convergence</h2>
+                <h2 class="gradient-text mb-3">Social VR & Gaming Convergence</h2>
                 <h3 class="text-metaverse-blue">2010s Revolution</h3>
-                
-                <div class="space-y-4 mt-8">
+
+                <div class="space-y-4 mt-4">
                     <div class="fragment p-4 border border-gray-700 rounded-lg">
                         <h4 class="text-lg font-bold text-metaverse-purple">VRChat (2014)</h4>
-                        <p class="text-gray-400 text-sm">65,000+ concurrent users • Full-body VR • Unlimited avatar creativity</p>
+                        <p class="text-gray-400 text-sm">65,000+ concurrent users • Full-body VR • Unlimited avatar
+                            creativity</p>
                     </div>
-                    
+
                     <div class="fragment p-4 border border-gray-700 rounded-lg">
-                        <h4 class="text-lg font-bold text-metaverse-green">Roblox (2006→explosion)</h4>
-                        <p class="text-gray-400 text-sm">200M+ monthly users • $500M+ paid to creators • Robux economy</p>
+                        <h4 class="text-lg font-bold text-metaverse-green">Roblox (2006 → 2017+ explosion)</h4>
+                        <p class="text-gray-400 text-sm">200M+ monthly users (14.5b hours in Q1/2023) • $500M+ paid to creators • Robux economy
+                        </p>
                     </div>
-                    
+
                     <div class="fragment p-4 border border-gray-700 rounded-lg">
-                        <h4 class="text-lg font-bold text-metaverse-pink">Fortnite (2017→metaverse)</h4>
-                        <p class="text-gray-400 text-sm">27M watched Travis Scott concert • Social platform evolution</p>
+                        <h4 class="text-lg font-bold text-metaverse-pink">Fortnite (2017 → metaverse)</h4>
+                        <p class="text-gray-400 text-sm">27M watched Travis Scott concert • Social platform evolution
+                        </p>
                     </div>
                 </div>
-                
-                <div class="fragment mt-8">
-                    <p class="text-center text-xl text-gray-300">
+
+                <div class="fragment mt-4">
+                    <p class="text-center text-lg text-gray-300">
                         Stage set for next evolution...
                     </p>
                 </div>
@@ -172,16 +372,14 @@
 
             <!-- Slide 1.4b: Fortnite Concert Video -->
             <section data-background-color="#0a0a0a">
-                <h3 class="gradient-text mb-6">Virtual Concerts: Travis Scott in Fortnite</h3>
-                
+                <h3 class="gradient-text mb-3">Virtual Concerts: Travis Scott in Fortnite</h3>
+
                 <div class="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/embed/wYeFAlVC8qU?autoplay=0&rel=0" 
-                        title="Travis Scott Fortnite Concert"
-                        allowfullscreen>
+                    <iframe src="https://www.youtube.com/embed/wYeFAlVC8qU?autoplay=0&rel=0"
+                        title="Travis Scott Fortnite Concert" allowfullscreen>
                     </iframe>
                 </div>
-                
+
                 <p class="text-center text-gray-400 mt-4 text-sm">
                     Click to play: 27 million concurrent viewers attended this virtual concert
                 </p>
@@ -189,78 +387,78 @@
 
             <!-- Slide 1.5: Blockchain Revolution -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">The Blockchain Revolution Begins</h2>
+                <h2 class="gradient-text mb-3">The Blockchain Revolution Begins</h2>
                 <h3 class="text-metaverse-purple">Why Decentralization Started to Matter</h3>
-                
-                <div class="grid grid-cols-2 gap-8 mt-8">
+
+                <div class="grid grid-cols-2 gap-4 mt-4">
                     <div class="fragment">
-                        <h4 class="text-xl font-bold mb-4">The Problem</h4>
-                        <ul class="text-gray-400 space-y-3 text-sm">
-                            <li>• Platform shutdown = lost assets</li>
-                            <li>• No true ownership</li>
-                            <li>• Walled gardens</li>
-                            <li>• Platform takes large cuts</li>
+                        <h4 class="text-lg font-bold mb-4">The Problem</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Platform shutdown = lost assets (AltspaceVR)</li>
+                            <li>No true ownership</li>
+                            <li>Walled gardens</li>
+                            <li>Platform takes large cuts</li>
                         </ul>
                     </div>
-                    
+
                     <div class="fragment">
-                        <h4 class="text-xl font-bold mb-4">The Solution</h4>
-                        <ul class="text-gray-400 space-y-3 text-sm">
-                            <li>• NFTs = provable ownership</li>
-                            <li>• Smart contracts = trustless trade</li>
-                            <li>• DAOs = community governance</li>
-                            <li>• Interoperability potential</li>
+                        <h4 class="text-lg font-bold mb-4">The Solution</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>NFTs = provable ownership</li>
+                            <li>Smart contracts = trustless trade</li>
+                            <li>DAOs = community governance</li>
+                            <li>Interoperability potential</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="fragment mt-8 text-center">
-                    <div class="inline-block p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-lg">
-                        <h4 class="text-2xl font-bold">Ethereum Launch (2015)</h4>
+                    <div class="inline-block p-4 px-10 bg-gradient-to-r from-purple-900 to-blue-900 rounded-lg">
+                        <h4 class="text-xl font-bold pt-4">Ethereum Launch (2015)</h4>
                         <p class="text-gray-300 mt-2">Enables programmable digital ownership</p>
                     </div>
                 </div>
-                
-                <div class="fragment mt-6 text-center">
-                    <div class="inline-block p-4 border-2 border-metaverse-pink rounded-lg">
+
+                <div class="fragment mt-3 text-center">
+                    <div class="inline-block p-2 px-14 border-2 border-metaverse-pink rounded-lg">
                         <p class="text-lg">Decentraland ICO (2017)</p>
-                        <p class="text-2xl font-bold text-metaverse-pink">$24M raised in under 60 seconds!</p>
+                        <p class="text-xl font-bold text-metaverse-pink">$24M raised in under 60 seconds!</p>
                     </div>
                 </div>
             </section>
 
             <!-- Part 2: Economics of Decentralized Metaverses (15 minutes) -->
-            
+
             <!-- Slide 2.1: Core Economic Primitives -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Core Economic Primitives</h2>
+                <h2 class="gradient-text mb-3">Core Economic Primitives</h2>
                 <h3 class="text-metaverse-green">Building Blocks of Web3 Metaverses</h3>
-                
-                <div class="grid grid-cols-2 gap-6 mt-8">
-                    <div class="fragment p-6 bg-gray-900 rounded-lg">
-                        <h4 class="text-xl font-bold text-metaverse-purple mb-3">NFT Land: Engineered Scarcity</h4>
-                        <ul class="text-gray-400 space-y-2 text-sm">
-                            <li>• Decentraland: 90,601 parcels (fixed)</li>
-                            <li>• The Sandbox: 166,464 parcels</li>
-                            <li>• ERC-721 tokens on blockchain</li>
-                            <li>• True ownership & transferability</li>
+
+                <div class="grid grid-cols-2 gap-3 mt-4">
+                    <div class="fragment p-4 bg-gray-900 rounded-lg">
+                        <h4 class="text-lg font-bold text-metaverse-purple mb-3">NFT Land: Engineered Scarcity</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Decentraland: 90,601 parcels (fixed)</li>
+                            <li>The Sandbox: 166,464 parcels</li>
+                            <li>ERC-721 tokens on blockchain</li>
+                            <li>True ownership & transferability</li>
                         </ul>
                     </div>
-                    
-                    <div class="fragment p-6 bg-gray-900 rounded-lg">
-                        <h4 class="text-xl font-bold text-metaverse-blue mb-3">Utility Tokens</h4>
-                        <ul class="text-gray-400 space-y-2 text-sm">
-                            <li>• MANA, SAND, CUBE</li>
-                            <li>• Medium of exchange</li>
-                            <li>• Governance rights</li>
-                            <li>• Staking opportunities</li>
+
+                    <div class="fragment p-4 bg-gray-900 rounded-lg">
+                        <h4 class="text-lg font-bold text-metaverse-blue mb-3">Utility Tokens</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>MANA, SAND, CUBE</li>
+                            <li>Medium of exchange</li>
+                            <li>Governance rights</li>
+                            <li>Staking opportunities</li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="fragment mt-6 p-6 bg-gray-900 rounded-lg">
-                    <h4 class="text-xl font-bold text-metaverse-pink mb-3">Creator Marketplaces</h4>
-                    <div class="grid grid-cols-3 gap-4 text-sm text-gray-400">
+
+                <div class="fragment mt-3 p-4 bg-gray-900 rounded-lg">
+                    <h4 class="text-lg font-bold text-metaverse-pink mb-3">Creator Marketplaces</h4>
+                    <div class="grid grid-cols-3 gap-4 text-gray-400">
                         <div>
                             <p class="font-semibold">Wearables</p>
                             <p>Fashion & identity</p>
@@ -275,19 +473,20 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="fragment mt-6">
+
+                <div class="fragment mt-3">
                     <p class="text-center text-lg text-gray-300">
-                        Smart contracts enable: <span class="text-metaverse-green">Burns • Fees • Royalties • Treasury Management</span>
+                        Smart contracts enable: <span class="text-metaverse-green">Burns • Fees • Royalties • Treasury
+                            Management</span>
                     </p>
                 </div>
             </section>
 
             <!-- Slide 2.2: Tokenomics Case Studies -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Tokenomics Case Studies</h2>
-                
-                <table class="comparison-table mt-8">
+                <h2 class="gradient-text mb-3">Tokenomics Case Studies</h2>
+
+                <table class="comparison-table mt-4">
                     <thead>
                         <tr>
                             <th>World</th>
@@ -323,10 +522,10 @@
                         </tr>
                     </tbody>
                 </table>
-                
-                <div class="fragment mt-8 p-4 bg-gray-900 rounded-lg">
+
+                <div class="fragment mt-4 p-8 bg-gray-900 rounded-lg">
                     <h4 class="text-lg font-bold mb-2">Key Economic Mechanisms</h4>
-                    <div class="grid grid-cols-3 gap-4 text-sm text-gray-400">
+                    <div class="grid grid-cols-3 gap-4 text-gray-400">
                         <div>
                             <p class="text-metaverse-purple font-semibold">Token Burns</p>
                             <p>Deflationary pressure</p>
@@ -345,34 +544,26 @@
 
             <!-- Slide 2.2b: Decentraland Demo -->
             <section data-background-color="#0a0a0a">
-                <h3 class="gradient-text mb-6">Decentraland: A Web3 Metaverse in Action</h3>
-                
+                <h3 class="gradient-text mb-4">Decentraland: A Web3 Metaverse in Action</h3>
+
                 <div class="video-container">
-                    <iframe 
-                        src="https://www.youtube.com/embed/eiLKa6Xos7Y?autoplay=0&rel=0" 
-                        title="Decentraland Metaverse"
-                        allowfullscreen>
+                    <iframe src="https://www.youtube.com/embed/EaddnOkoA90?autoplay=0&rel=0"
+                        title="Decentraland Metaverse" allowfullscreen>
                     </iframe>
                 </div>
-                
-                <p class="text-center text-gray-400 mt-4 text-sm">
-                    Click to play: Exploring Decentraland's user-owned virtual world
-                </p>
             </section>
 
             <!-- Slide 2.3: Scaling Solutions -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Scaling Solutions & Trade-offs</h2>
+                <h2 class="gradient-text mb-3">Scaling Solutions & Trade-offs</h2>
                 <h3 class="text-metaverse-blue">The Blockchain Trilemma in Practice</h3>
-                
-                <div class="mt-8">
-                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*9wHrewC1F-WDW-F-CkBxNQ.png" 
-                         alt="Blockchain Trilemma" 
-                         class="mx-auto rounded-lg"
-                         style="max-height: 300px;">
+
+                <div class="mt-0 mx-auto flex justify-center">
+                    <img src="https://www.electraprotocol.com/wp-content/uploads/2021/12/blockchain-trilemma.png"
+                        alt="Blockchain Trilemma" class="mx-auto rounded-lg" style="width: 300px; text-align: center;">
                 </div>
-                
-                <div class="grid grid-cols-2 gap-6 mt-8">
+
+                <div class="grid grid-cols-2 gap-3 mt-0">
                     <div class="fragment">
                         <h4 class="text-lg font-bold text-metaverse-purple mb-3">Ethereum L1</h4>
                         <ul class="text-sm text-gray-400 space-y-1">
@@ -382,7 +573,7 @@
                             <li class="text-red-400">✗ 15 TPS limit</li>
                         </ul>
                     </div>
-                    
+
                     <div class="fragment">
                         <h4 class="text-lg font-bold text-metaverse-green mb-3">Polygon (Sidechain)</h4>
                         <ul class="text-sm text-gray-400 space-y-1">
@@ -393,71 +584,71 @@
                         </ul>
                     </div>
                 </div>
-                
-                <div class="fragment mt-6 p-4 bg-gray-900 rounded-lg">
-                    <h4 class="text-lg font-bold mb-3">Layer 2 Rollups: The Future</h4>
-                    <div class="grid grid-cols-2 gap-4 text-sm">
-                        <div>
-                            <p class="font-semibold text-metaverse-blue">Optimistic (Arbitrum, Optimism)</p>
-                            <p class="text-gray-400">Cheap, 7-day withdrawals</p>
+
+                <div class="fragment mt-3 px-4 py-2 bg-gray-900 rounded-lg">
+                    <h4 class="text-lg font-bold mb-0">Layer 2 Rollups: The Future</h4>
+                    <div class="grid grid-cols-2 gap-4 text-md -mt-6">
+                        <div class="-mt-0">
+                            <p class="font-semibold text-metaverse-blue -mt-2">Optimistic (Arbitrum, Optimism)</p>
+                            <p class="text-gray-400 -mt-2">Cheap, 7-day withdrawals</p>
                         </div>
-                        <div>
-                            <p class="font-semibold text-metaverse-pink">ZK (zkSync, StarkNet)</p>
-                            <p class="text-gray-400">Fast finality, complex proofs</p>
+                        <div class="-mt-0">
+                            <p class="font-semibold text-metaverse-pink -mt-2">ZK (zkSync, StarkNet)</p>
+                            <p class="text-gray-400 -mt-2">Fast finality, complex proofs</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="fragment mt-4 text-center">
                     <p class="text-lg text-metaverse-green">
-                        EIP-4844 (2024): 10-100x cheaper L2 transactions!
+                        EIP-4844 (2024): 10-100x cheaper L2 transactions! <span class="text-gray-400 text-sm">(blob field in transactions for larger data payloads)</span>
                     </p>
                 </div>
             </section>
 
             <!-- Slide 2.4: Governance Models -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Governance Models</h2>
+                <h2 class="gradient-text mb-3">Governance Models</h2>
                 <h3 class="text-metaverse-purple">From Corporate to Community Control</h3>
-                
-                <div class="mt-8">
-                    <div class="fragment p-6 bg-gray-900 rounded-lg mb-4">
-                        <h4 class="text-xl font-bold text-metaverse-pink mb-3">Decentraland DAO</h4>
-                        <div class="grid grid-cols-2 gap-4 text-sm text-gray-400">
+
+                <div class="mt-4">
+                    <div class="fragment p-4 bg-gray-900 rounded-lg mb-4">
+                        <h4 class="font-bold text-metaverse-pink mb-3">Decentraland DAO</h4>
+                        <div class="grid grid-cols-2 gap-4 text-gray-400">
                             <div>
                                 <p class="font-semibold">What it controls:</p>
                                 <ul class="mt-2 space-y-1">
-                                    <li>• Smart contract upgrades</li>
-                                    <li>• Marketplace fees</li>
-                                    <li>• Content policies</li>
-                                    <li>• Treasury allocation</li>
+                                    <li>Smart contract upgrades</li>
+                                    <li>Marketplace fees</li>
+                                    <li>Content policies</li>
+                                    <li>Treasury allocation</li>
                                 </ul>
                             </div>
                             <div>
                                 <p class="font-semibold">How it works:</p>
                                 <ul class="mt-2 space-y-1">
-                                    <li>• MANA/LAND/NAME holders vote</li>
-                                    <li>• Off-chain voting (gas-free)</li>
-                                    <li>• Multisig execution</li>
-                                    <li>• Community grants program</li>
+                                    <li>MANA/LAND/NAME holders vote</li>
+                                    <li>Off-chain voting (gas-free)</li>
+                                    <li>Multisig execution</li>
+                                    <li>Community grants program</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="fragment p-6 bg-gray-900 rounded-lg">
-                        <h4 class="text-xl font-bold mb-3">Progressive Decentralization</h4>
-                        <div class="flex justify-between items-center text-sm">
+
+                    <div class="fragment p-4 bg-gray-900 rounded-lg">
+                        <h4 class="font-bold mb-3">Progressive Decentralization</h4>
+                        <div class="flex justify-between items-center">
                             <div class="text-center">
                                 <p class="font-semibold text-metaverse-blue">Phase 1</p>
                                 <p class="text-gray-400">Core team control</p>
                             </div>
-                            <div class="text-2xl">→</div>
+                            <div class="text-xl">→</div>
                             <div class="text-center">
                                 <p class="font-semibold text-metaverse-green">Phase 2</p>
                                 <p class="text-gray-400">Community input</p>
                             </div>
-                            <div class="text-2xl">→</div>
+                            <div class="text-xl">→</div>
                             <div class="text-center">
                                 <p class="font-semibold text-metaverse-purple">Phase 3</p>
                                 <p class="text-gray-400">Full DAO control</p>
@@ -465,8 +656,8 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="fragment mt-6">
+
+                <div class="fragment mt-3">
                     <p class="text-center text-lg text-gray-300">
                         Challenge: <span class="text-metaverse-pink">Balancing efficiency with decentralization</span>
                     </p>
@@ -475,50 +666,50 @@
 
             <!-- Slide 2.5: Economic Challenges -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Economic Sustainability Challenges</h2>
-                
-                <div class="grid grid-cols-2 gap-8 mt-8">
+                <h2 class="gradient-text mb-2 text-2xl">Economic Sustainability Challenges</h2>
+
+                <div class="grid grid-cols-2 gap-3 mt-3">
                     <div class="fragment">
-                        <h4 class="text-xl font-bold text-metaverse-pink mb-4">Speculation vs. Utility</h4>
-                        <div class="p-4 bg-gray-900 rounded-lg">
-                            <p class="text-sm text-gray-400 mb-2">Virtual land prices 2019-2022:</p>
-                            <p class="text-3xl font-bold text-metaverse-pink">+879%</p>
-                            <p class="text-sm text-gray-400 mt-2">Then crashed 90%+</p>
+                        <h4 class="text-base font-bold text-metaverse-pink mb-2">Speculation vs. Utility</h4>
+                        <div class="p-2 bg-gray-900 rounded-lg">
+                            <p class="text-xs text-gray-400 mb-1">Virtual land prices 2019-2022:</p>
+                            <p class="text-xl font-bold text-metaverse-pink">+879%</p>
+                            <p class="text-xs text-gray-400 mt-1">Then crashed 90%+</p>
                         </div>
-                        
-                        <p class="text-sm text-gray-300 mt-4">
+
+                        <p class="text-xs text-gray-300 mt-2">
                             Problem: Empty parcels, no real activity
                         </p>
                     </div>
-                    
+
                     <div class="fragment">
-                        <h4 class="text-xl font-bold text-metaverse-blue mb-4">User Retention Reality</h4>
-                        <div class="space-y-3">
-                            <div class="p-3 bg-gray-900 rounded">
-                                <p class="text-sm font-semibold">Decentraland</p>
-                                <p class="text-xs text-gray-400">~8,000 daily active users</p>
+                        <h4 class="text-base font-bold text-metaverse-blue mb-2">User Retention Reality</h4>
+                        <div class="space-y-2">
+                            <div class="p-2 bg-gray-900 rounded text-lg">
+                                <p class="font-semibold">Decentraland</p>
+                                <p class="text-gray-400">~8,000 daily active users</p>
                             </div>
-                            <div class="p-3 bg-gray-900 rounded">
-                                <p class="text-sm font-semibold">Second Life</p>
-                                <p class="text-xs text-gray-400">~750,000 monthly users</p>
+                            <div class="p-2 bg-gray-900 rounded text-lg">
+                                <p class="font-semibold">Second Life</p>
+                                <p class="text-gray-400">~750,000 monthly users</p>
                             </div>
-                            <div class="p-3 bg-gray-900 rounded">
-                                <p class="text-sm font-semibold">Roblox</p>
-                                <p class="text-xs text-gray-400">200M+ monthly users</p>
+                            <div class="p-2 bg-gray-900 rounded text-lg">
+                                <p class="font-semibold">Roblox</p>
+                                <p class="text-gray-400">200M+ monthly users</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="fragment mt-8 p-4 bg-gradient-to-r from-purple-900 to-blue-900 rounded-lg">
-                    <h4 class="text-lg font-bold mb-2">Key Lesson</h4>
-                    <p class="text-gray-300">
+
+                <div class="fragment mt-3 p-3 bg-gradient-to-r from-purple-900 to-blue-900 rounded-lg">
+                    <h4 class="text-base font-bold mb-1">Key Lesson</h4>
+                    <p class="text-gray-300 text-md">
                         Ownership alone doesn't create value - <span class="text-metaverse-green">experiences do</span>
                     </p>
                 </div>
-                
-                <div class="fragment mt-4">
-                    <p class="text-center text-sm text-gray-400">
+
+                <div class="fragment mt-3">
+                    <p class="text-center text-xs text-gray-400">
                         Success formula: Fun + Social + Economic Opportunity
                     </p>
                 </div>
@@ -526,13 +717,13 @@
 
             <!-- Slide 2.6: Decentralized Identity -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Decentralized Identity (DID)</h2>
+                <h2 class="gradient-text mb-3">Decentralized Identity (DID)</h2>
                 <h3 class="text-metaverse-green">Your Portable Metaverse Self</h3>
-                
-                <div class="grid grid-cols-2 gap-6 mt-8">
+
+                <div class="grid grid-cols-2 gap-3 mt-4">
                     <div class="fragment">
                         <h4 class="text-lg font-bold mb-4">Identity Primitives</h4>
-                        <ul class="space-y-3 text-sm">
+                        <ul class="space-y-3">
                             <li class="p-3 bg-gray-900 rounded">
                                 <span class="font-semibold text-metaverse-purple">ENS Names</span>
                                 <p class="text-gray-400">vitalik.eth → Your universal username</p>
@@ -547,10 +738,10 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div class="fragment">
                         <h4 class="text-lg font-bold mb-4">Why It Matters</h4>
-                        <ul class="space-y-3 text-sm text-gray-400">
+                        <ul class="space-y-3 text-gray-400">
                             <li class="flex items-start">
                                 <span class="text-metaverse-green mr-2">✓</span>
                                 <span>Take your reputation across worlds</span>
@@ -570,8 +761,8 @@
                         </ul>
                     </div>
                 </div>
-                
-                <div class="fragment mt-8 text-center">
+
+                <div class="fragment mt-4 text-center">
                     <div class="inline-block p-4 border-2 border-metaverse-green rounded-lg">
                         <p class="text-lg">Your avatar = Your wallet = Your identity</p>
                     </div>
@@ -579,41 +770,43 @@
             </section>
 
             <!-- Part 3: Future Possibilities (5 minutes) -->
-            
+
             <!-- Slide 3.1: Technical Innovations -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Technical Innovations on the Horizon</h2>
+                <h2 class="gradient-text mb-3">Technical Innovations on the Horizon</h2>
                 <h3 class="text-metaverse-purple">Ethereum's Roadmap for Metaverses</h3>
-                
-                <div class="space-y-4 mt-8">
-                    <div class="fragment p-6 bg-gradient-to-r from-purple-900 to-blue-900 rounded-lg">
-                        <h4 class="text-xl font-bold mb-2">EIP-4844: Proto-Danksharding (2024)</h4>
-                        <div class="grid grid-cols-2 gap-4 text-sm">
-                            <div>
+
+                <div class="space-y-4 mt-4">
+                    <div class="fragment p-4 bg-gradient-to-r from-purple-900 to-blue-900 rounded-lg">
+                        <h4 class="text-md font-bold mb-2">EIP-4844: Proto-Danksharding (2024)</h4>
+                        <div class="grid grid-cols-2 gap-4 -mt-6">
+                            <div class="">
                                 <p class="text-gray-300">Current L2 cost: $0.10-1.00</p>
                             </div>
                             <div>
                                 <p class="text-metaverse-green font-bold">After: $0.001-0.01</p>
                             </div>
                         </div>
-                        <p class="text-sm text-gray-400 mt-2">Enables true microtransactions in metaverses</p>
+                        <div class="-mt-6">
+                        <p class="text-sm text-gray-400">Enables true microtransactions in metaverses</p>
+                        </div>
                     </div>
-                    
-                    <div class="fragment p-6 bg-gray-900 rounded-lg">
-                        <h4 class="text-xl font-bold mb-2">Layer 3: App-Specific Rollups</h4>
-                        <ul class="text-sm text-gray-400 space-y-2">
-                            <li>• Custom game mechanics</li>
-                            <li>• Privacy for social features</li>
-                            <li>• Ultra-low latency actions</li>
+
+                    <div class="fragment p-4 bg-gray-900 rounded-lg">
+                        <h4 class="text-lg font-bold mb-2">Layer 3: App-Specific Rollups</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Custom game mechanics</li>
+                            <li>Privacy for social features</li>
+                            <li>Ultra-low latency actions</li>
                         </ul>
                     </div>
-                    
-                    <div class="fragment p-6 bg-gray-900 rounded-lg">
-                        <h4 class="text-xl font-bold mb-2">Account Abstraction (ERC-4337)</h4>
-                        <ul class="text-sm text-gray-400 space-y-2">
-                            <li>• Social recovery wallets</li>
-                            <li>• Gasless transactions for users</li>
-                            <li>• Session keys for games</li>
+
+                    <div class="fragment p-4 bg-gray-900 rounded-lg">
+                        <h4 class="text-lg font-bold mb-2">Account Abstraction (ERC-4337)</h4>
+                        <ul class="text-gray-400 space-y-2">
+                            <li>Social recovery wallets</li>
+                            <li>Gasless transactions for users</li>
+                            <li>Session keys for games</li>
                         </ul>
                     </div>
                 </div>
@@ -621,37 +814,38 @@
 
             <!-- Slide 3.2: Standards & Interoperability -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">Emerging Standards & Interoperability</h2>
-                
-                <div class="mt-8">
-                    <div class="fragment mb-6">
-                        <h4 class="text-xl font-bold text-metaverse-blue mb-4">Metaverse Standards Forum</h4>
+                <h2 class="gradient-text mb-3">Emerging Standards & Interoperability</h2>
+
+                <div class="mt-4">
+                    <div class="fragment mb-3">
+                        <h4 class="text-lg font-bold text-metaverse-blue mb-4">Metaverse Standards Forum</h4>
                         <p class="text-gray-400">200+ companies working on:</p>
                     </div>
-                    
+
                     <div class="grid grid-cols-3 gap-4">
                         <div class="fragment p-4 bg-gray-900 rounded-lg text-center">
                             <h5 class="font-bold text-metaverse-purple mb-2">Avatar Portability</h5>
                             <p class="text-sm text-gray-400">VRM format</p>
                             <p class="text-xs text-gray-500 mt-1">One avatar, many worlds</p>
                         </div>
-                        
+
                         <div class="fragment p-4 bg-gray-900 rounded-lg text-center">
                             <h5 class="font-bold text-metaverse-green mb-2">Scene Description</h5>
                             <p class="text-sm text-gray-400">USD (Pixar)</p>
                             <p class="text-xs text-gray-500 mt-1">Universal 3D format</p>
                         </div>
-                        
+
                         <div class="fragment p-4 bg-gray-900 rounded-lg text-center">
                             <h5 class="font-bold text-metaverse-pink mb-2">Asset Ownership</h5>
                             <p class="text-sm text-gray-400">NFT standards</p>
                             <p class="text-xs text-gray-500 mt-1">Cross-platform items</p>
                         </div>
                     </div>
-                    
-                    <div class="fragment mt-8 p-4 border-2 border-metaverse-blue rounded-lg">
+
+                    <div class="fragment mt-4 p-4 border-2 border-metaverse-blue rounded-lg">
                         <p class="text-center text-lg">
-                            Vision: <span class="text-metaverse-blue">Your identity, assets, and friends travel with you</span>
+                            Vision: <span class="text-metaverse-blue">Your identity, assets, and friends travel with
+                                you</span>
                         </p>
                     </div>
                 </div>
@@ -659,10 +853,10 @@
 
             <!-- Slide 3.3: AI Integration -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">AI + Blockchain Integration</h2>
+                <h2 class="gradient-text mb-3">AI + Blockchain Integration</h2>
                 <h3 class="text-metaverse-green">The Creative Revolution</h3>
-                
-                <div class="grid grid-cols-2 gap-8 mt-8">
+
+                <div class="grid grid-cols-2 gap-4 mt-4">
                     <div>
                         <h4 class="text-lg font-bold mb-4">Generative World Creation</h4>
                         <div class="fragment p-4 bg-gray-900 rounded-lg mb-4">
@@ -670,17 +864,17 @@
                             <p class="text-metaverse-purple italic">"Create a cyberpunk marketplace with neon signs"</p>
                             <p class="text-sm text-gray-400 mt-2">→ Full 3D environment generated</p>
                         </div>
-                        
+
                         <div class="fragment">
                             <h4 class="text-lg font-bold mb-4">Smart NPCs</h4>
-                            <ul class="text-sm text-gray-400 space-y-2">
-                                <li>• On-chain memory & personality</li>
-                                <li>• Learn from player interactions</li>
-                                <li>• Create emergent narratives</li>
+                            <ul class="text-gray-400 space-y-2">
+                                <li>On-chain memory & personality</li>
+                                <li>Learn from player interactions</li>
+                                <li>Create emergent narratives</li>
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="fragment">
                         <h4 class="text-lg font-bold mb-4">Decentralized AI Services</h4>
                         <div class="space-y-3">
@@ -690,7 +884,7 @@
                             </div>
                             <div class="p-3 bg-gray-900 rounded">
                                 <p class="text-sm font-semibold text-metaverse-pink">AI Model Markets</p>
-                                <p class="text-xs text-gray-400">Bittensor, Ocean Protocol</p>
+                                <p class="text-xs text-gray-400">Bittensor (PoI), Ocean Protocol (tokenized data)</p>
                             </div>
                             <div class="p-3 bg-gray-900 rounded">
                                 <p class="text-sm font-semibold text-metaverse-green">Content Verification</p>
@@ -703,55 +897,60 @@
 
             <!-- Slide 3.4: The Path Forward -->
             <section data-background-color="#0a0a0a">
-                <h2 class="gradient-text mb-6">The Path to Mass Adoption</h2>
-                
-                <div class="mt-8">
-                    <div class="fragment mb-8">
-                        <h3 class="text-2xl text-center text-metaverse-purple mb-4">By 2030...</h3>
+                <h2 class="gradient-text mb-3">The Path to Mass Adoption</h2>
+
+                <div class="mt-4">
+                    <div class="fragment mb-4">
+                        <h3 class="text-xl text-center text-metaverse-purple mb-4">By 2030...</h3>
                     </div>
-                    
+
                     <div class="space-y-4">
                         <div class="fragment flex items-center">
                             <div class="w-20 text-right mr-4">
                                 <span class="text-lg font-bold text-metaverse-blue">Tech</span>
                             </div>
                             <div class="flex-1 p-3 bg-gray-900 rounded">
-                                <p class="text-sm text-gray-300">AR glasses as common as smartphones • Instant L3 transactions</p>
+                                <p class="text-sm text-gray-300">AR glasses as common as smartphones • Instant L3
+                                    transactions</p>
                             </div>
                         </div>
-                        
+
                         <div class="fragment flex items-center">
                             <div class="w-20 text-right mr-4">
                                 <span class="text-lg font-bold text-metaverse-green">Identity</span>
                             </div>
                             <div class="flex-1 p-3 bg-gray-900 rounded">
-                                <p class="text-sm text-gray-300">One avatar, infinite worlds • Reputation that matters</p>
+                                <p class="text-sm text-gray-300">One avatar, infinite worlds • Reputation that matters
+                                </p>
                             </div>
                         </div>
-                        
+
                         <div class="fragment flex items-center">
                             <div class="w-20 text-right mr-4">
                                 <span class="text-lg font-bold text-metaverse-pink">Economy</span>
                             </div>
                             <div class="flex-1 p-3 bg-gray-900 rounded">
-                                <p class="text-sm text-gray-300">Millions earning in metaverses • Real value creation</p>
+                                <p class="text-sm text-gray-300">Millions earning in metaverses • Real value creation
+                                </p>
                             </div>
                         </div>
-                        
+
                         <div class="fragment flex items-center">
                             <div class="w-20 text-right mr-4">
                                 <span class="text-lg font-bold text-metaverse-purple">Society</span>
                             </div>
                             <div class="flex-1 p-3 bg-gray-900 rounded">
-                                <p class="text-sm text-gray-300">Work, play, and socialize seamlessly across physical and digital</p>
+                                <p class="text-sm text-gray-300">Work, play, and socialize seamlessly across physical
+                                    and digital</p>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="fragment mt-8 text-center">
-                        <p class="text-xl text-gray-300">
-                            The metaverse won't be one world - <br/>
-                            <span class="text-2xl gradient-text">it will be an ecosystem of interconnected experiences</span>
+
+                    <div class="fragment mt-4 text-center">
+                        <p class="text-lg text-gray-300">
+                            The metaverse won't be one world - <br />
+                            <span class="text-xl gradient-text">it will be an ecosystem of interconnected
+                                experiences</span>
                         </p>
                     </div>
                 </div>
@@ -759,29 +958,47 @@
 
             <!-- Closing Slide -->
             <section class="center" data-background-color="#000000">
-                <h1 class="gradient-text mb-8">Thank You</h1>
-                
-                <div class="mt-8">
-                    <p class="text-xl text-gray-300 mb-4">Questions & Discussion</p>
-                    
-                    <div class="grid grid-cols-3 gap-6 mt-8 text-sm">
-                        <div class="text-center">
-                            <p class="text-metaverse-purple font-bold">Learn More</p>
-                            <p class="text-gray-400">ethereum.org</p>
+                <h1 class="gradient-text mb-4">Thank You</h1>
+
+                <div class="mt-4">
+                    <p class="text-lg text-gray-300 mb-3">Explore Decentralized Metaverses</p>
+
+                    <div class="grid grid-cols-2 gap-3 max-w-3xl mx-auto">
+                        <div class="p-3 bg-gray-900 rounded-lg">
+                            <h4 class="text-metaverse-purple font-bold mb-2">Decentraland</h4>
+                            <p class="text-xs text-gray-400 mb-1">The pioneer DAO-governed metaverse</p>
+                            <p class="text-xs text-gray-500">decentraland.org</p>
                         </div>
-                        <div class="text-center">
-                            <p class="text-metaverse-blue font-bold">Try It</p>
-                            <p class="text-gray-400">decentraland.org</p>
+
+                        <div class="p-3 bg-gray-900 rounded-lg">
+                            <h4 class="text-metaverse-blue font-bold mb-2">The Sandbox</h4>
+                            <p class="text-xs text-gray-400 mb-1">Voxel gaming with major brands</p>
+                            <p class="text-xs text-gray-500">sandbox.game</p>
                         </div>
-                        <div class="text-center">
-                            <p class="text-metaverse-green font-bold">Build</p>
-                            <p class="text-gray-400">docs.decentraland.org</p>
+
+                        <div class="p-3 bg-gray-900 rounded-lg">
+                            <h4 class="text-metaverse-green font-bold mb-2">Somnium Space</h4>
+                            <p class="text-xs text-gray-400 mb-1">VR-first persistent world</p>
+                            <p class="text-xs text-gray-500">somniumspace.com</p>
+                        </div>
+
+                        <div class="p-3 bg-gray-900 rounded-lg">
+                            <h4 class="text-metaverse-pink font-bold mb-2">Otherside</h4>
+                            <p class="text-xs text-gray-400 mb-1">Next-gen massive multiplayer</p>
+                            <p class="text-xs text-gray-500">otherside.xyz</p>
                         </div>
                     </div>
+
+                    <div class="mt-4 p-3 border border-gray-700 rounded-lg">
+                        <p class="text-sm text-gray-300 mb-1">Learn & Build</p>
+                        <p class="text-xs text-gray-400">
+                            ethereum.org • polygon.technology • immutable.com
+                        </p>
+                    </div>
                 </div>
-                
-                <div class="mt-12">
-                    <p class="text-sm text-gray-500">
+
+                <div class="mt-4">
+                    <p class="text-xs text-gray-500">
                         The future is open, decentralized, and user-owned
                     </p>
                 </div>
@@ -791,4 +1008,5 @@
 
     <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
